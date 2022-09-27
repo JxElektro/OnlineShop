@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import CartContext from "../Context/CartContext";
 import ItemCart from "./ItemCart";
 
-const Cart = () => {
+export const Cart = () => {
     /* Creamos 2 estados, uno para ver si el carrito esta abierto o no 
     y otro para obtener la cantidad de productos que tenemos en el carrito */
     const [cartOpen, setCartOpen] = useState(false);
@@ -92,4 +92,3 @@ const Cart = () => {
     );
 };
 
-export default Cart;
