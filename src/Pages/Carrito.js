@@ -1,5 +1,5 @@
 import React from "react";
-import Cart from "../Components/Cart/Cart";
+import Cart from "../Components/Cart";
 
 export default function Carrito() {
   return (

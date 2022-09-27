@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
-import CartContext from "../../Context/CartContext";
-import { ItemCart } from "./ItemCart/ItemCart";
+import CartContext from "../Context/CartContext";
+import ItemCart from "./ItemCart";
 
 const Cart = () => {
     /* Creamos 2 estados, uno para ver si el carrito esta abierto o no 
