@@ -7,12 +7,12 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  background-color: #9c5757;
+  background-color: #9b7c7c;
 }
 
 .NavBar{
-  background-image: url('https://images.unsplash.com/photo-1559825481-12a05cc00344?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80');
- /* background-color: rgb(239, 233, 233);*/
+  /*background-image: url('https://images.unsplash.com/photo-1559825481-12a05cc00344?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80');*/
+  background-color: rgb(239, 233, 233);
   height: 10vh;
   width: 100%;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -37,4 +37,45 @@ body{
   background-color: #fff;
   border-radius: 10px;
   font-size: 25px;
+}
+
+.productTitle{
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+.productContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.productBox{
+background-color: rgb(239, 233, 233);
+border-radius: 20px;
+padding: 20px;
+}
+
+.productButton{
+  background-color: #9b7c7c;
+  color: rgb(239, 233, 233);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+.productButton:hover{
+  background-color: #814747e7;
+  color: white;
 }

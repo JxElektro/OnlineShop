@@ -1,11 +1,11 @@
-
+import  { CartProvider }  from  './Context/CartContext' ;
 import './App.css';
 import NavBar from './Components/NavBar';
 
-
+// Componente principal
 function App() {
   return (
-   <div>
+   <div className="App">
     <NavBar />
     </div>
   );

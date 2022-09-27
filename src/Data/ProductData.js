@@ -4,7 +4,7 @@ export const ProductData = [
     price: 1000,
     name: "Coca Cola",
     description: "Bebida gaseosa",
-    image: "https://www.coca-cola.com/content/dam/journey/us/en/global/2020/01/2020-01-21-coca-cola-1.jpg",
+    image: "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/1018520_1-FvWii0Ub-medium.jpg",
   },
   {
     id: 2,
@@ -12,7 +12,7 @@ export const ProductData = [
     amount: 0,
     name: "Pepsi",
     description: "Bebida gaseosa",
-    image: "https://www.pepsi.com.mx/wp-content/uploads/2020/05/pepsi-1.jpg",
+    image: "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/1018418-TNShLuiQ-medium.jpg",
   },
   {
     id: 3,
@@ -20,7 +20,7 @@ export const ProductData = [
     amount: 0,
     name: "Fanta",
     description: "Bebida gaseosa",
-    image: "https://www.fanta.com.mx/wp-content/uploads/2020/05/fanta-1.jpg",
+    image: "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/1018935-SudZ0mrw-medium.jpg",
   },
   {
     id: 4,
@@ -28,7 +28,7 @@ export const ProductData = [
     amount: 0,
     name: "Sprite",
     description: "Bebida gaseosa",
-    image: "https://www.coca-cola.com/content/dam/journey/us/en/global/2020/01/2020-01-21-coca-cola-1.jpg",
+    image: "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/20240968-TnbDIxs_-medium.jpg",
   },
   {
     id: 5,
@@ -36,7 +36,13 @@ export const ProductData = [
     amount: 0,
     name: "Manzana",
     description: "Bebida gaseosa",
-    image: "https://www.coca-cola.com/content/dam/journey/us/en/global/2020/01/2020-01-21-coca-cola-1.jpg",
+    image: "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/20240968-TnbDIxs_-medium.jpg",
   },  
-];
-  
+{
+    id: 6,
+    price: 6000,
+    amount: 0,
+    name: "Naranja",
+    description: "Bebida gaseosa",
+    image:"https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/1018935-SudZ0mrw-medium.jpg"
+  },]
