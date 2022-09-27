@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 
-const CartContext = createContext();
+export const CartContext = createContext();
 
 // create a CartProvider component for a shoping cart
 export const CartProvider = ({ children }) => {
@@ -20,6 +20,7 @@ export const CartProvider = ({ children }) => {
   // when the cart items change, update the local storage
   useEffect(() => {
     localStorage.setItem("cartProducts", JSON.stringify(cartItems));
+    console.log(cartItems);
   }, [cartItems]);
   // add an item to the cart
   const addItemToCart = (product) => {
@@ -66,6 +67,4 @@ export const CartProvider = ({ children }) => {
     </CartContext.Provider>
   );  
 }
-
-// export the CartContext
-export default CartContext;
+export default CartProvider;
