@@ -14,7 +14,7 @@ const Products = () => {
             <p>{product.description}</p>
             <p>{product.price}</p>
           </div>
-          <button className="productButton" onClick={() => console.log("Added to cart")}>Add to cart</button>
+          <button className="productButton" onClick={() => console.log(product)}>Add to cart</button>
         </div>
       ))}
     </div>

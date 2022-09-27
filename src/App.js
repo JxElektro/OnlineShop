@@ -5,9 +5,9 @@ import NavBar from './Components/NavBar';
 // Componente principal
 function App() {
   return (
-   <div className="App">
+    <CartProvider>
     <NavBar />
-    </div>
+    </CartProvider>
   );
 }
 
