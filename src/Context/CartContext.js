@@ -70,6 +70,8 @@ export const CartProvider = ({ children }) => {
         } else return productInCart;
       });
     }
+  
+
   };
   // return the cart items, the addItemToCart function, and the deleteItemFromCart function
   return (

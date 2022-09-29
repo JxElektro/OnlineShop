@@ -21,8 +21,9 @@ export const ItemCart = ({ item }) => {
 
       <div className="itemCart__amount">
         <p>Cantidad :{amount}</p>
-        <button onClick={() => addItemToCart(item, "add")}>agregar</button>
-        <button onClick={() => deleteItemToCart(item, "remove")}>Sacar</button>
+        <button onClick={() => addItemToCart(item, "add")}>Agregar</button>
+        <button onClick={() => deleteItemToCart(item, "remove")}>Remover </button>
+        
       </div>
     </div>
     </>

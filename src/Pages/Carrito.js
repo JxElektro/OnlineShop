@@ -18,7 +18,7 @@ import { useContext } from "react";
 
       {cartItems.length === 0 && <h1>El carrito esta vacio</h1>}
 
-       <h1>Total: {total}</h1>
+       <h1>Total: ${total}</h1>
       </div>
 
             
