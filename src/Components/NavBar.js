@@ -5,7 +5,7 @@ import Productos from "../Pages/Productos";
 import Carrito from "../Pages/Carrito";
 import Contacto from "../Pages/Contacto";
 import Home from "../Pages/Home";
-import { Cart } from "./Cart";
+import  { Cart }  from "../Components/Cart";
 
 
 // This is a NavBar component that is used to navigate between pages
@@ -27,8 +27,10 @@ export default function NavBar() {
         <li>
           <Link to="/carrito">Carrito    </Link>
         </li>
-        <li> <Cart /> </li>
+      
+        < Cart />
       </ul>
+      
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/productos" component={Productos} />
@@ -36,6 +38,7 @@ export default function NavBar() {
         <Route path="/carrito" component={Carrito} />
         <Route path="/:rest*" component={NotFound} />
       </Switch>
+      
     </div>
   );
 }

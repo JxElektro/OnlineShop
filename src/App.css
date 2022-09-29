@@ -104,3 +104,20 @@ button {
   padding: 2%;
   border-radius: 10px;
 }
+
+
+.containerHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carouselContainer{
+  width: 100vh;
+}
+
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

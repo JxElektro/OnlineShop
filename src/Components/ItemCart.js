@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import { CartContext } from "../Context/CartContext";
 
-export const ItemCart = ({ item }) => {
+ export const ItemCart = ({ item }) => {
   /* Traemos del context las funciones para agregar y sacar productos del carrito */
   const { editItemToCart } = useContext(CartContext);
 
   /* Desestructuramos el item para sacar solo la id */
-  const { amount } = item;
+ const { amount } = item;
 
   return ( 
     <div className="itemCart">

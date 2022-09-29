@@ -1,15 +1,14 @@
 import React from "react";
-import { Cart  } from "../Components/Cart";
 
 
-
-export default function Carrito() {
+ function Carrito() {
   return (
     <div>
     
       <h1>Carrito</h1>
-              <Cart />
+ 
     </div>
   );
 }
 
+export default Carrito;
