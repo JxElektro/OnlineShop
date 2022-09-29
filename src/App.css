@@ -88,3 +88,19 @@ padding: 20px;
   padding: 20px;
   text-align: center;
 }
+
+.containerNavCart {
+background-color:  white;
+border-radius: 20px;
+padding: 20px;
+margin-top: 350%;
+
+}
+
+button {
+  margin: 2px;
+  background-color: #9b7c7c;
+  color: rgb(239, 233, 233);
+  padding: 2%;
+  border-radius: 10px;
+}

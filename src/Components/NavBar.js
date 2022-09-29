@@ -5,6 +5,8 @@ import Productos from "../Pages/Productos";
 import Carrito from "../Pages/Carrito";
 import Contacto from "../Pages/Contacto";
 import Home from "../Pages/Home";
+import { Cart } from "./Cart";
+
 
 // This is a NavBar component that is used to navigate between pages
 // It is used in the App.js file
@@ -23,8 +25,9 @@ export default function NavBar() {
           <Link to="/contacto">Contacto</Link>
         </li>
         <li>
-          <Link to="/carrito">Carrito</Link>
+          <Link to="/carrito">Carrito    </Link>
         </li>
+        <li> <Cart /> </li>
       </ul>
       <Switch>
         <Route path="/" component={Home} />
