@@ -42,13 +42,24 @@ export const CartProvider = ({ children }) => {
     }
   };  
   // delete an item from the cart
-  const deleteItemFromCart = (product) => {
+  const deleteItemToCart = (product) => {
     // check if the item is in the cart
     const inCart = cartItems.find(
       (productInCart) => productInCart.id === product.id
     );
     // if the item is in the cart and there is only one item, remove it from the cart
     if (inCart.amount === 1) {
+      setCartItems(cartItems.filter((productInCart) => productInCart.id !== product.id));
+    } else {
+      // if the item is in the cart and there is more than one item, decrease the amount by 1
+      setCartItems(
+        cartItems.map((productInCart) =>
+          productInCart.id === product.id
+            ? { ...inCart, amount: inCart.amount - 1 } : productInCart
+        )
+      );
+    }
+    if (inCart.amount === inCart.amount - 1) {
       setCartItems(cartItems.filter((productInCart) => productInCart.id !== product.id)
       ); 
     } else {
@@ -62,9 +73,10 @@ export const CartProvider = ({ children }) => {
   };
   // return the cart items, the addItemToCart function, and the deleteItemFromCart function
   return (
-    <CartContext.Provider value={{ cartItems, addItemToCart, deleteItemFromCart }}>
+    <CartContext.Provider value={{ cartItems, addItemToCart, deleteItemToCart }}>
       {children}
     </CartContext.Provider>
   );  
 }
-export default CartProvider;
+
+

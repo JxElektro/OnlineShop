@@ -3,8 +3,8 @@ import { CartContext } from "../Context/CartContext";
 
  export const ItemCart = ({ item }) => {
   /* Traemos del context las funciones para agregar y sacar productos del carrito */
-  const { editItemToCart } = useContext(CartContext);
-
+  const { addItemToCart } = useContext(CartContext);
+  const { deleteItemToCart } = useContext(CartContext);
   /* Desestructuramos el item para sacar solo la id */
  const { amount } = item;
 
@@ -17,8 +17,8 @@ import { CartContext } from "../Context/CartContext";
       
       <div className="itemCart__amount">
       <p>Cantidad :{amount}</p>
-        <button onClick={() => editItemToCart(item, "add")}>agregar</button>
-        <button onClick={() => editItemToCart(item, "remove")}>Sacar</button>
+        <button onClick={() => addItemToCart(item, "add")}>agregar</button>
+         <button onClick={() => deleteItemToCart(item, "remove")}>Sacar</button> 
       </div>
     </div>
   );
