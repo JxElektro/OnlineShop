@@ -27,8 +27,8 @@ export default function NavBar() {
         <li>
           <Link to="/carrito">Carrito    </Link>
         </li>
-      
         < Cart />
+        
       </ul>
       
       <Switch>

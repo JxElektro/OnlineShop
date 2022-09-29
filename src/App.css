@@ -94,7 +94,7 @@ padding: 20px;
 background-color:  white;
 border-radius: 20px;
 padding: 20px;
-margin-top: 350%;
+margin-top: 30vh;
 
 }
 
@@ -121,4 +121,34 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align:center;
+  margin-top: 5%;
 }
+
+.containerCarrito__items{
+  width: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  align-content: center;
+}
+
+.imgCart{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.itemCart{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+
