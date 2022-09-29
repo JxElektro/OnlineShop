@@ -25,19 +25,23 @@ export const Cart = () => {
         0
     );
 
-    
+
     return (
         <div >
             <div
+
+
                 onClick={() => setCartOpen(!cartOpen)}
             >
                 <div >
+                    <span>{productsLength}</span>
                     {!cartOpen ? (
+                        // * Icono del carrito *
                         <svg
-                            
-                            width={"35px"}
+
+                            width="35px"
                             viewBox="0 0 30 27"
-                            fill="none"
+                            fill="#000000"
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <path
@@ -46,7 +50,7 @@ export const Cart = () => {
                             />
                             <path
                                 d="M12.75 27C13.9926 27 15 25.9926 15 24.75C15 23.5074 13.9926 22.5 12.75 22.5C11.5074 22.5 10.5 23.5074 10.5 24.75C10.5 25.9926 11.5074 27 12.75 27Z"
-                                fill="#000000"   
+                                fill="#000000"
                             />
                             <path
                                 d="M23.25 27C24.4926 27 25.5 25.9926 25.5 24.75C25.5 23.5074 24.4926 22.5 23.25 22.5C22.0074 22.5 21 23.5074 21 24.75C21 25.9926 22.0074 27 23.25 27Z"
@@ -54,11 +58,14 @@ export const Cart = () => {
                             />
                         </svg>
                     ) : (
+
+                        /* Icono de carrito abierto */
+
                         <svg
                             width="20"
                             height="20"
                             viewBox="0 0 20 20"
-                            fill="none"
+                            fill="#000000"
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <path
@@ -68,26 +75,55 @@ export const Cart = () => {
                         </svg>
                     )}
                 </div>
-                {!cartOpen && (
-                    <div >{productsLength}</div>
-                )}
             </div>
-
+            {// * Si el carrito esta abierto, mostramos los productos que tenemos en el carrito *
+            }
             {cartItems && cartOpen && (
-                <div className="containerNavCart">
+                <div className="containerNavCart" style={{ marginTop: "20vh" }}>
                     <h2>Tu carrito</h2>
-
+                    {  // * Si el Num de Items en el Carrito es igual a 0 Muestra el Text "Carrito Vacio" */
+                    }
                     {cartItems.length === 0 ? (
                         <p >Tu carrito esta vacio</p>
                     ) : (
                         <div >
+                            {// * Muestra los Items del Carrito */
+                            }
                             {cartItems.map((item, i) => (
                                 <ItemCart key={i} item={item} />
                             ))}
                         </div>
                     )}
-
+                    {   // * Mostramos el precio total de los productos del carrito */
+                    }
                     <h3 >Total: ${total}</h3>
+
+                    {// * Boton para ir a la pagina de checkout Cuando lo tenga*/
+                    }
+                    {/*<button
+                        className="btn btn-primary"
+                        onClick={() => {
+                            setCartOpen(false);
+                            history.push("/checkout");
+                        }}
+                    >
+                        Ir a Checkout
+                    </button>
+                    */
+                    }
+
+                    
+                    <button
+                        className="btn btn-primary"
+                        onClick={() => {
+                            setCartOpen(false);
+                        }}
+                         
+                    >   
+                        Cerrar
+                    </button>
+
+
                 </div>
             )}
         </div>
