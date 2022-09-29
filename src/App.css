@@ -24,6 +24,7 @@ body {
   font-weight: 800;
   align-items: center;
   justify-content: center;
+
 }
 
 .NavBar a {
@@ -89,7 +90,7 @@ body {
   gap: 20px;
   padding: 20px;
   text-align: center;
-  z-index: 5;
+  
 }
 
 .containerNavCart {
@@ -97,9 +98,10 @@ body {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
- margin-top: 30rem;
+ margin-top: 1rem;
   overflow-y: scroll;
-
+  position: absolute;
+  z-index: 5;
 }
 
 button {
@@ -111,6 +113,7 @@ button {
   border-radius: 10px;
   font-size: 20px;
   cursor: pointer;
+  
 }
 
 

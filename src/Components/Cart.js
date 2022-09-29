@@ -30,15 +30,16 @@ export const Cart = () => {
         <div >
             <div
 
-
+                // Si el carrito esta abierto, le agregamos la clase "open" para que se muestre
                 onClick={() => setCartOpen(!cartOpen)}
             >
                 <div >
-                    <span>{productsLength}</span>
+            
                     {!cartOpen ? (
                         // * Icono del carrito *
+                        <div>
                         <svg
-
+                        
                             width="35px"
                             viewBox="0 0 30 27"
                             fill="#000000"
@@ -57,10 +58,17 @@ export const Cart = () => {
                                 fill="#000000"
                             />
                         </svg>
+                        {// cantidad de productos en el carrito
+                        }
+
+                        <>
+                            {productsLength}    
+                        </>
+                        </div>
                     ) : (
 
                         /* Icono de carrito abierto */
-
+                            
                         <svg
                             width="20"
                             height="20"
@@ -73,6 +81,12 @@ export const Cart = () => {
                                 fill="#000000"
                             />
                         </svg>
+                        
+                        
+
+
+
+
                     )}
                 </div>
             </div>
@@ -112,14 +126,14 @@ export const Cart = () => {
                     */
                     }
 
-                    
+
                     <button
                         className="btn btn-primary"
                         onClick={() => {
                             setCartOpen(false);
                         }}
-                         
-                    >   
+
+                    >
                         Cerrar
                     </button>
 
