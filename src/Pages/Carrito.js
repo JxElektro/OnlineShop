@@ -1,5 +1,5 @@
 import React from "react";
-import Cart from "../Components/Cart";
+import { Cart } from "../Components/Cart";
 
 
 
@@ -8,7 +8,7 @@ export default function Carrito() {
     <div>
     
       <h1>Carrito</h1>
-      {/*<Cart />                Este Componente no funciona */}
+      <Cart />              
     </div>
   );
 }

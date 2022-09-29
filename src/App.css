@@ -79,3 +79,12 @@ padding: 20px;
   background-color: #814747e7;
   color: white;
 }
+
+.cartContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
