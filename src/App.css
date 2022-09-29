@@ -89,21 +89,28 @@ body {
   gap: 20px;
   padding: 20px;
   text-align: center;
+  z-index: 5;
 }
 
 .containerNavCart {
+  max-height: 70vh;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 20px;
-  margin-top: 30vh;
+ margin-top: 30rem;
+  overflow-y: scroll;
+
 }
 
 button {
   margin: 2px;
+  width: 90%;
   background-color: #9b7c7c;
   color: rgb(239, 233, 233);
   padding: 2%;
   border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 

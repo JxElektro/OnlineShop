@@ -79,7 +79,7 @@ export const Cart = () => {
             {// * Si el carrito esta abierto, mostramos los productos que tenemos en el carrito *
             }
             {cartItems && cartOpen && (
-                <div className="containerNavCart" style={{ marginTop: "20vh" }}>
+                <div className="containerNavCart">
                     <h2>Tu carrito</h2>
                     {  // * Si el Num de Items en el Carrito es igual a 0 Muestra el Text "Carrito Vacio" */
                     }
