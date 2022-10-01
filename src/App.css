@@ -10,6 +10,8 @@
 body {
   background-color: #9d11ee;
   color :rgb(75, 71, 71);
+  width: 100vh;
+  overflow-x: hidden;
 }
 
 .NavBar {
