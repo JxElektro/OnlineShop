@@ -12,7 +12,7 @@ const Products = () => {
     <div className="productContainer">
       {ProductData.map((product) => (
         <div  className="productBox" key={product.id}>
-          <img claasName="imgHigh" src={product.image} alt={product.name} />
+          <img className="imgHigh" src={product.image} alt={product.name} />
           <div>
             <h3>{product.name}</h3>
             <p>{product.description}</p>
