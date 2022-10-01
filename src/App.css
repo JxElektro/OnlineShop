@@ -73,6 +73,7 @@ position: fixed;
   gap: 20px;
   padding: 20px;
   text-align: center;
+  margin-bottom: 10vh;
 }
 
 .productBox {
