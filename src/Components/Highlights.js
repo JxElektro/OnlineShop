@@ -13,7 +13,7 @@ export default function Highlights() {
        }
       {ProductData.sort((a, b) => a.stock - b.stock).slice(0, 4).map((product) => (
         <div className="containerHome__productos__box" key={product.id}>
-          <img src={product.image} alt={product.name} />
+          <img className="imgHigh" src={product.image} alt={product.name} />
             
           <div>
             <h3>{product.name}</h3>

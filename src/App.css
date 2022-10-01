@@ -10,7 +10,7 @@
 body {
   background-color: #9d11ee;
   color :rgb(75, 71, 71);
-
+overflow-x: hidden;
 }
 
 .NavBar {
@@ -170,6 +170,10 @@ gap: 10px;
   padding: 1rem;
 }
 
+.imgHigh {
+  width: 20vw;
+  height: 20vw;
+}
 
 .containerForm {
   display: flex;
