@@ -5,6 +5,7 @@ export const ProductData = [
     name: "Coca Cola",
     description: "Bebida gaseosa",
     image: "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/1018520_1-FvWii0Ub-medium.jpg",
+    stock: 20,
   },
   {
     id: 2,
@@ -13,6 +14,7 @@ export const ProductData = [
     name: "Pepsi",
     description: "Bebida gaseosa",
     image: "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/1018418-TNShLuiQ-medium.jpg",
+    stock: 5,
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ export const ProductData = [
     name: "Fanta",
     description: "Bebida gaseosa",
     image: "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/1018935-SudZ0mrw-medium.jpg",
+    stock: 10,
   },
   {
     id: 4,
@@ -29,6 +32,7 @@ export const ProductData = [
     name: "Sprite",
     description: "Bebida gaseosa",
     image: "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/20240968-TnbDIxs_-medium.jpg",
+    stock: 3,
   },
   {
     id: 5,
@@ -37,6 +41,7 @@ export const ProductData = [
     name: "Manzana",
     description: "Bebida gaseosa",
     image: "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/20240968-TnbDIxs_-medium.jpg",
+    stock: 8,
   },  
 {
     id: 6,
@@ -44,5 +49,6 @@ export const ProductData = [
     amount: 0,
     name: "Naranja",
     description: "Bebida gaseosa",
-    image:"https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/1018935-SudZ0mrw-medium.jpg"
+    image:"https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/1018935-SudZ0mrw-medium.jpg",
+    stock: 10,
   },]

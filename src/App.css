@@ -90,7 +90,7 @@ body {
   gap: 20px;
   padding: 20px;
   text-align: center;
-  
+
 }
 
 .containerNavCart {
@@ -98,7 +98,7 @@ body {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
- margin-top: 1rem;
+  margin-top: 1rem;
   overflow-y: scroll;
   position: absolute;
   z-index: 5;
@@ -113,19 +113,44 @@ button {
   border-radius: 10px;
   font-size: 20px;
   cursor: pointer;
-  
+
 }
 
 
 .containerHome {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .carouselContainer {
-  width: 100vh;
+  width: 100%;
 }
+
+.imgCarousel {
+  width: 100%;
+  height: 100%;
+}
+
+.containerHome__productos {
+  display: flex;
+  flex-direction: row;
+gap: 20px;
+}
+
+
+.containerHome__productos__box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
 
 .containerForm {
   display: flex;
@@ -165,4 +190,3 @@ button {
   background-color: aliceblue;
   border-radius: 10px;
 }
-
